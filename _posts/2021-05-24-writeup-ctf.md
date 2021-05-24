@@ -152,7 +152,7 @@ Crack it to find the passphrase. The password to opened the zip file is the base
 *==>* Use John the Ripper to crack that file with wordlist rockyou!
 ![john](/assets/img/john.png){: .mx-auto.d-block :}
 ```
-*==>* Get the key: felecity 
+==> Get the key: felecity 
 ```
 ```python
 base64.b64decode(b'felecity').decode()
