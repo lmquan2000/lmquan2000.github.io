@@ -15,9 +15,9 @@ author: lmquan
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+#   Resources:
+#     - Beautiful Jekyll: "https://beautifuljekyll.com"
+#     - Learn markdown: "https://www.markdowntutorial.com/"
   Author's home: "https://lmquan2000.github.io"
 
 # --- Logo --- #
@@ -61,11 +61,11 @@ social-network-links:
 #  calendly: yourname
 #  mastodon: instance.url/@username
 #  ORCID: your ORCID ID
-#  google-scholar: "https://scholar.google.com/citations?user=J4DJDXsAAAAJ&hl=vi"
+ google-scholar: "https://scholar.google.com/citations?user=J4DJDXsAAAAJ&hl=vi"
 
 # If you want to show a link to an RSS in the footer, add the site description here.
 # If you don't want to show an RSS link, remove the following line.
-rss-description: This website is a virtual proof that I'm awesome
+# rss-description: This website is a virtual proof that I'm awesome
 
 # --- General options --- #
 
