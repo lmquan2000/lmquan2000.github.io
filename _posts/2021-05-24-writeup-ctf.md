@@ -121,3 +121,48 @@ while True:
 
 {: .box-note}
 **==> Flag:** HCMUS-CTF{You_Can_4ttack_A3S!?!}  
+
+
+### Crackme
+```
+$6$OQy2HYdK1F0RuFLv$OEsWe98lUzVkAiZy0.BDj.1GwjRtD72QZtQ7XugSdGss6TEXxnu4b3NWaVKBoSFtJ/LlG59l2sh4nLUPIqeLV1
+```
+```
+Crack that hashed to plaintext. The base64 of the plaintext is the password to open the zip file.
+```
+The format of the hash is $6$rounds={rounds}${salt}${checksum} and it's SHA512  
+*==>* Use hashcat tool with rockyou wordlist to crack that file
+
+![hash1](/assets/img/hash1.png){: .mx-auto.d-block :}
+![hash2](/assets/img/hash2.png){: .mx-auto.d-block :}
+
+```python
+base64.b64decode(b'playboy123').decode()
+```
+```
+b'cGxheWJveTEyMw=='
+```
+```
+=> Password to unzip phase2.zip: cGxheWJveTEyMw==
+```
+In the phase2, you should crack id_rsa file to unzip flag.zip containing flag
+```
+Crack it to find the passphrase. The password to opened the zip file is the base64 of that passphrase.
+```
+*==>* Use John the Ripper to crack that file with wordlist rockyou!
+![john](/assets/img/john.png){: .mx-auto.d-block :}
+```
+*==>* Get the key: felecity 
+```
+```python
+base64.b64decode(b'felecity').decode()
+```
+```
+b'ZmVsZWNpdHk='
+```
+```
+=> Password to unzip flag.zip: ZmVsZWNpdHk=
+```
+
+{: .box-note}
+**==> Flag:** HCMUS_CTF{cracking_for_fun}
