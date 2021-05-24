@@ -34,7 +34,7 @@ r4SJmJOanoOFhMqDmcqLyp2Lk8qFjMqZiZiLh4iGg4SNyo6LnovKmYXKnoKLnsqFhIaTyoufnoKFmIOQ
 ```
 == at the end => Base64 encode
 ```python
-base64.b64decode(s64).decode()
+s = base64.b64decode(s64).decode()
 ```
 The title is single byte encode. Do u find it familiar ?? => XOR encode  
 Also, remember that format of flag: HCMUS-CTF{...}. The key may be
