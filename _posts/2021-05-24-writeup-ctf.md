@@ -92,7 +92,7 @@ def main():
     banner = """
 ```
 
-Another useful information is the length of flag = 32.
+Another useful information is the length of flag = 32.  
 **Attack!**
 Idea of the attacking method is sending blocksize - 1 byte for the encryption oracle and the last byte of block is the first of the flag. Then you just bruteforce to find that character. Repeating doing this for the rest of flag.
 
