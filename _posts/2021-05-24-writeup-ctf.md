@@ -46,12 +46,16 @@ or
 k = s[1] ^ ord('C')
 ```
 => Try all possible key and finally i succeed.
+
 ```python
 k = s[-1] ^ ord('}')
 print(''.join(chr(c ^ k) for c in s))
 ```
+
 ```
 Encryption is a way of scrambling data so that only authorized parties can understand the information. In technical terms, it is the process of converting human-readable plaintext to incomprehensible text, also known as ciphertextHCMUS-CTF{we_know_that_you_can_do_simple_XOR_54313154abcfe54af2ecab}
 ```
+
+
 {: .box-note}
 **==> Flag:** HCMUS-CTF{we_know_that_you_can_do_simple_XOR_54313154abcfe54af2ecab}
