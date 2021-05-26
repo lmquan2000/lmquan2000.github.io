@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Write-up for HCMUS-CTF Warm-Up Stage - CRYPTOGRAPHY
-useMath: true
 ---
 ### SanityCheck
 ```
