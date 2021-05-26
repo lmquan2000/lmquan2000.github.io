@@ -267,7 +267,7 @@ $$= (m_p * q * q^{-1} mod(p) + m_q * p * p^{-1}mod(q)) mod(pq)$$
 $$= (c^d mod(p))(qq^{-1}mod(p) + c^kmod(q)pp^{-1}mod(q))mod(pq)$$
 
 Then try to decrypt with $$c_1=2, c_2=c_1^2=4$$
-We get $x_1$, $x_2$ and based on above results:  
+We get $$x_1$$, $$x_2$$ and based on above results:  
 $$x_1^2-x_2 = 0 mod(p)$$
 
 $$p = gcd(x_1^2-x_2, N)$$
