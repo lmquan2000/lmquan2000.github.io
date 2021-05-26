@@ -254,12 +254,12 @@ while k > 0:
 
 So, output of this function become 
 
-$$m_p = c^d mod(p)$$
+$$m_p = c^d mod(p)$$  
 $$m_q = m_p * c^k mod(q)$$
 with $$k=c^{\left\lfloor{\log_c^d}\right\rfloor}$$
 
 So when choosing $$c_2 = c_1^2$$
-$$k_2 = c_2^{\left\lfloor{\log_{c_2}^d}\right\rfloor}=c_1^{2\left\lfloor{\log_{c_1^2}^d}\right\rfloor} = c_1^{\left\lfloor{\log_{c_1}^d}\right\rfloor} = k1$$
+$$k_2 = c_2^{\left\lfloor{\log_{c_2}^d}\right\rfloor}=c_1^{2\left\lfloor{\log_{c_1^2}^d}\right\rfloor} = c_1^{\left\lfloor{\log_{c_1}^d}\right\rfloor} = k1$$  
 After feeding to *crt()*, we get:
 
 $$x = (a_0 * M_0 * y_0 + a_1 * M_1 * y_1) mod(M)$$
@@ -267,7 +267,8 @@ $$= (m_p * q * q^{-1} mod(p) + m_q * p * p^{-1}mod(q)) mod(pq)$$
 $$= (c^d mod(p))(qq^{-1}mod(p) + c^kmod(q)pp^{-1}mod(q))mod(pq)$$
 
 Then try to decrypt with $$c_1=2, c_2=c_1^2=4$$
-We get $x_1, x_2$ and based on above results,  $$x_1^2-x_2 = 0 mod(p)$$
+We get $x_1$, $x_2$ and based on above results:  
+$$x_1^2-x_2 = 0 mod(p)$$
 
 $$p = gcd(x_1^2-x_2, N)$$
 After this step, the following operators are quite simple
