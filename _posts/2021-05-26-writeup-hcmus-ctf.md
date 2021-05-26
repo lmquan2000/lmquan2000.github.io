@@ -243,6 +243,7 @@ def decrypt(c: int) -> int:
 ```
 
 Dive into the decrypt function, there's an abnomal line.
+
 ```python
 while k > 0:
     if k % 2 == 1:
@@ -250,6 +251,7 @@ while k > 0:
     a = a * a % q
     k = k // 2
 ```
+
 So, output of this function become 
 
 $$m_p = c^d mod(p)$$
@@ -269,11 +271,14 @@ We get $x_1, x_2$ and based on above results,  $$x_1^2-x_2 = 0 mod(p)$$
 
 $$p = gcd(x_1^2-x_2, N)$$
 After this step, the following operators are quite simple
+
 ```python
 q = N // p
 phi = (q-1)*(p-1)
 d = inverse(e, phi)
 flag = long_to_bytes(pow(c, d, N))
 ```
+
+
 {: .box-note}
 **==> Flag:** HCMUS-CTF{fault-attack}
