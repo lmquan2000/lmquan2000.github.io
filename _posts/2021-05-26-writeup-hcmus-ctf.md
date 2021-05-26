@@ -258,7 +258,7 @@ $$m_p = c^d mod(p)$$
 $$m_q = m_p * c^k mod(q)$$
 with $$k=c^{\left\lfloor{\log_c^d}\right\rfloor}$$
 
-So when choosing $$c_2 = c_1^2$$
+So when choosing $$c_2 = c_1^2$$:  
 $$k_2 = c_2^{\left\lfloor{\log_{c_2}^d}\right\rfloor}=c_1^{2\left\lfloor{\log_{c_1^2}^d}\right\rfloor} = c_1^{\left\lfloor{\log_{c_1}^d}\right\rfloor} = k1$$  
 After feeding to *crt()*, we get:
 
